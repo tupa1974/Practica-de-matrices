@@ -1,7 +1,7 @@
-package javaapplication17;
+package Ejercicio_1;
 
 
-public class JavaApplication17 {
+public class Ejercicio_1 {
 
     /*
      Una matriz de 5 filas x 3 columnas almacena el total de goles de 5 jugadores de futbol en los últimos 
