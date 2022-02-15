@@ -1,5 +1,6 @@
 package Ejercicio_1;
 
+import java.util.Scanner;
 
 public class Ejercicio_1 {
 
@@ -16,7 +17,25 @@ Nota: tener en cuenta que el promedio de goles puede dar como resultado un núme
     NO SEA ENTERO.
      */
     public static void main(String[] args) {
-       
+
+        int tablaGoles[][] = new int[5][3];
+        double promedios[] = new double[5];
+        int promedio = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+        for (int jugador = 0; jugador < 5; jugador++) {
+            for (int partido = 0; partido < 3; partido++) {
+                System.out.println("Ingrese los goles del jugador " + (jugador + 1)
+                    + " en el partido n° " + (partido + 1));
+                tablaGoles[jugador][partido] = teclado.nextInt();
+                promedio += tablaGoles[jugador][partido];
+            }
+            promedios[jugador] = (double) promedio / 3;
+            promedio = 0;
+            System.out.println("promedio " + promedios[jugador]);
+        }
+
     }
-    
+
 }
